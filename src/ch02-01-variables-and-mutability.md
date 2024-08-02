@@ -58,7 +58,7 @@ will be changing the value associated to this variable.
 
 However, you might be wondering at this point what exactly happens when a variable
 is declared as `mut`, as we previously mentioned that Cairo's memory is immutable.
-The answer is that the _value_ is immutable, but the _variable_ isn't. The value
+The answer is that the _value_ is mutable, but the _variable_ isn't. The value
 associated to the variable can be changed. Assigning to a mutable variable in Cairo
 is essentially equivalent to redeclaring it to refer to another value in another memory cell,
 but the compiler handles that for you, and the keyword `mut` makes it explicit.
